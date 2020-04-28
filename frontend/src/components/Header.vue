@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <img src="img/logo.jpg" alt="">
+    <img class="logo" src="img/logo.jpg" alt="">
     <h1 class="title">{{ title }}</h1>
     <div class="search">Найти</div>
   </header>
