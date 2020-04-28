@@ -48,6 +48,12 @@ export default {
 
 <style scoped>
 .main-list {
+  list-style-type: none;
 
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
 }
 </style>

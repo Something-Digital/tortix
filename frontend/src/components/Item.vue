@@ -32,6 +32,6 @@ export default {
 
 <style scoped>
 .item {
-
+  padding: var(--common-padding);
 }
 </style>
