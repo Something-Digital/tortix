@@ -26,6 +26,11 @@ export default {
 }
 
 .title {
+  font-family: 'Amatic SC', cursive;
+  font-size: 72px;
+  line-height: 72px;
+  text-transform: uppercase;
   color: var(--main-title-color);
+  margin: 0;
 }
 </style>
