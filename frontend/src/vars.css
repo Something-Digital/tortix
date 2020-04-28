@@ -1,0 +1,13 @@
+:root {
+  /* heights */
+
+
+  /* paddings */
+  --common-padding: 8px;
+
+
+  /* colors */
+  --main-title-color: hotpink;
+  --main-text-color: #2c3e50;
+  --main-background-color: lightpink;
+}
