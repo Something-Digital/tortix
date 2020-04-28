@@ -32,6 +32,7 @@ export default {
 
 <style scoped>
 .item {
+  margin: 0 auto;
   padding: var(--common-padding);
 }
 </style>
