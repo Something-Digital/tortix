@@ -1,16 +1,30 @@
 <template>
   <header class="header">
-    <img class="logo" src="img/logo.jpg" alt="">
-    <h1 class="title">{{ title }}</h1>
-    <div class="search">Найти</div>
+    <img
+      class="logo"
+      src="img/logo.jpg"
+      alt=""
+    >
+    <h1 class="title">
+      {{ title }}
+    </h1>
+    <Search />
   </header>
 </template>
 
 <script>
+import Search from '@/components/Search.vue';
+
 export default {
   name: 'Header',
+  components: {
+    Search,
+  },
   props: {
-    title: String,
+    title: {
+      type: String,
+      required: true,
+    },
   },
 };
 </script>

@@ -4,10 +4,14 @@
 
   /* paddings */
   --common-padding: 8px;
+  --element-padding: 6px;
 
 
   /* colors */
   --main-title-color: hotpink;
   --main-text-color: #2c3e50;
   --main-background-color: lightpink;
+
+  /* sizes */
+  --main-icon-size: 24px;
 }
