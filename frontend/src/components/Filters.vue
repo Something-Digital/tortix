@@ -18,6 +18,6 @@ export default {
   padding: var(--common-padding);
 
   min-width: 240px;
-  background: #ccc;
+  background: var(--gray-background);
 }
 </style>

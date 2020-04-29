@@ -2,7 +2,7 @@
   <header class="header">
     <img
       class="logo"
-      src="img/logo.jpg"
+      src="img/logo.svg"
       alt=""
     >
     <h1 class="title">
@@ -37,6 +37,10 @@ export default {
 
   padding: var(--common-padding);
   background: var(--main-background-color);
+}
+
+.logo {
+  height: 72px;
 }
 
 .title {

@@ -54,7 +54,7 @@ export default {
   transition: .1s;
 }
 .search-submit:hover {
-  background: whitesmoke;
+  background: var(--gray-background);
 }
 .search-submit > img {
   width: var(--main-icon-size);
