@@ -19,7 +19,12 @@ export default {
 
 <style scoped>
 .main {
-  flex: 1;
-  display: flex;
+
+}
+@media screen and (min-width: 900px) {
+  .main {
+    flex: 1;
+    display: flex;
+  }
 }
 </style>
