@@ -2,9 +2,10 @@
   <ul class="main-list">
     <Item
       v-for="item in items"
-      :key="item.id"
       :id="item.id"
+      :key="item.id"
       :title="item.title"
+      :photo="item.photo"
       :city="item.city"
     />
   </ul>
@@ -23,23 +24,24 @@ export default {
       {
         id: 'a1',
         title: 'John Doe',
-        // photo: '',
+        photo: 'cake0.jpg',
         city: 'Челябинск',
       },
       {
         id: 'a2',
         title: 'Пашка Тортов',
-        // photo: '',
+        photo: 'cake1.jpg',
         city: 'Сантьяго',
       },
       {
         id: 'a3',
         title: 'Инна Тортина',
-        // photo: '',
+        photo: 'cake2.jpg',
         city: 'Кременкуль',
       },
       {
         id: 'a4',
+        photo: 'cake3.webp',
       },
     ],
   }),
