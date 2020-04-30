@@ -64,7 +64,7 @@ export default {
   display: flex;
   cursor: pointer;
   padding: 0 var(--element-padding);
-  opacity: .5;
+  opacity: .4;
   user-select: none;
 }
 .sort-type:not(:first-of-type) {
