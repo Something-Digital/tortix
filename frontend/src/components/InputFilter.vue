@@ -3,12 +3,9 @@
     v-if="items && items.length > 0"
     class="filter"
   >
-    <div
-      v-if="title"
-      class="filter-title"
-    >{{ title }}</div>
     <input
       :list="title"
+      :placeholder="title"
       class="filter-input"
     >
     <datalist :id="title">
@@ -41,7 +38,6 @@ export default {
 .filter {
   --full-size: calc(var(--main-icon-size) + 2*var(--element-padding));
   --half-size: calc(var(--full-size) / 2);
-  --font-size: calc(var(--main-icon-size) - var(--element-padding));
   width: 100%;
   display: block;
 }

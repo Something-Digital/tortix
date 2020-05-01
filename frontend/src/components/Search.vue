@@ -23,7 +23,6 @@ export default {
 .search {
   --full-size: calc(var(--main-icon-size) + 2*var(--element-padding));
   --half-size: calc(var(--full-size) / 2);
-  --font-size: calc(var(--main-icon-size) - var(--element-padding));
   position: relative;
 }
 .search-input {
