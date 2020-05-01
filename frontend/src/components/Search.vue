@@ -1,6 +1,9 @@
 <template>
   <form class="search">
-    <input class="search-input">
+    <input
+      class="search-input"
+      type="search"
+    >
     <button class="search-submit">
       <img
         src="img/svg/search-24px.svg"
@@ -24,8 +27,8 @@ export default {
   position: relative;
 }
 .search-input {
-  height: var(--main-icon-size);
-  line-height: var(--main-icon-size);
+  height: var(--full-size);
+  line-height: var(--full-size);
   padding:
     var(--element-padding)
     calc(var(--full-size) + var(--element-padding))
