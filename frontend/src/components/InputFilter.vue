@@ -1,21 +1,18 @@
 <template>
   <label
-    v-if="value && values.length > 0"
+    v-if="items && items.length > 0"
     class="filter"
   >
     <div
       v-if="title"
       class="title"
     >{{ title }}</div>
-    <input
-      list="ice-cream-flavors"
-      name="ice-cream-choice"
-    >
-    <datalist id="ice-cream-flavors">
+    <input :list="title">
+    <datalist :id="title">
       <option
-        v-for="value in values"
-        :key="value"
-        :value="value"
+        v-for="item in items"
+        :key="item"
+        :value="item"
       />
     </datalist>
   </label>
@@ -29,7 +26,7 @@ export default {
       type: String,
       default: null,
     },
-    values: {
+    items: {
       type: Array,
       default: null,
     },
