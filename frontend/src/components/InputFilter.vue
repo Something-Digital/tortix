@@ -43,7 +43,7 @@ export default {
   margin-left: var(--common-padding);
 }
 @media screen and (min-width: 900px) {
-  .filter:not(:first-of-type) {
+  .filter {
     margin-top: var(--common-vertical-margin);
   }
 }
