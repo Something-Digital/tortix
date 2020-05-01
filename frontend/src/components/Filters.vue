@@ -12,17 +12,23 @@
       title="Доставка"
       :items="['Самовывоз', 'До двери', 'Забрать на почте']"
     />
-    <p>Цена От До</p>
+    <MinMaxFilter
+      title="Цена за кг"
+      :min="10"
+      :max="5000"
+    />
   </aside>
 </template>
 
 <script>
 import InputFilter from '@/components/InputFilter.vue';
+import MinMaxFilter from '@/components/MinMaxFilter.vue';
 
 export default {
   name: 'Filters',
   components: {
     InputFilter,
+    MinMaxFilter,
   },
 };
 </script>
