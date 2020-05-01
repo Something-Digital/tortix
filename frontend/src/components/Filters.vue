@@ -31,7 +31,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: calc(2*var(--common-padding)) var(--common-padding);
+  padding: 0 var(--common-padding) var(--common-padding) 0;
   background: var(--gray-background);
 }
 @media screen and (min-width: 900px) {
