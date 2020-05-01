@@ -6,6 +6,9 @@
   --common-padding: 8px;
   --element-padding: 6px;
 
+  /* margins */
+  --common-horizontal-margin: 20px;
+  --common-vertical-margin: 16px;
 
   /* colors */
   --main-title-color: hotpink;

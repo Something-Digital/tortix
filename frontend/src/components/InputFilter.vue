@@ -5,9 +5,12 @@
   >
     <div
       v-if="title"
-      class="title"
+      class="filter-title"
     >{{ title }}</div>
-    <input :list="title">
+    <input
+      :list="title"
+      class="filter-input"
+    >
     <datalist :id="title">
       <option
         v-for="item in items"
@@ -35,5 +38,28 @@ export default {
 </script>
 
 <style scoped>
-
+.filter {
+  --full-size: calc(var(--main-icon-size) + 2*var(--element-padding));
+  --half-size: calc(var(--full-size) / 2);
+  --font-size: calc(var(--main-icon-size) - var(--element-padding));
+  width: 100%;
+  display: block;
+}
+.filter:not(:first-of-type) {
+  margin-top: var(--common-vertical-margin);
+}
+.filter-input {
+  height: var(--main-icon-size);
+  line-height: var(--main-icon-size);
+  padding:
+    var(--element-padding)
+    var(--element-padding)
+    var(--element-padding)
+    var(--half-size);
+  font-size: var(--font-size);
+  border: 0;
+  border-radius: var(--half-size);
+  outline: transparent;
+  color: var(--main-text-color);
+}
 </style>
