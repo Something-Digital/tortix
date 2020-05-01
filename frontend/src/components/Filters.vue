@@ -1,6 +1,5 @@
 <template>
   <aside class="filters">
-    <h3>Фильтры:</h3>
     <InputFilter
       title="Город"
       :items="['Челябинск', 'Москва', 'Санкт-Петербург', 'Кременкуль']"
@@ -29,9 +28,15 @@ export default {
 
 <style scoped>
 .filters {
-  padding: var(--common-padding);
-
-  min-width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: calc(2*var(--common-padding)) var(--common-padding);
   background: var(--gray-background);
+}
+@media screen and (min-width: 900px) {
+  .filters {
+    display: block;
+  }
 }
 </style>

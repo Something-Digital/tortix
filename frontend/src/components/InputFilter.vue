@@ -38,11 +38,16 @@ export default {
 .filter {
   --full-size: calc(var(--main-icon-size) + 2*var(--element-padding));
   --half-size: calc(var(--full-size) / 2);
-  width: 100%;
   display: block;
 }
-.filter:not(:first-of-type) {
-  margin-top: var(--common-vertical-margin);
+.filter:not(:first-of-type) { /* horizontal */
+  margin-top: 0;
+  margin-left: var(--common-horizontal-margin);
+}
+@media screen and (min-width: 900px) {
+  .filter:not(:first-of-type) {
+    margin-top: var(--common-vertical-margin);
+  }
 }
 .filter-input {
   height: var(--main-icon-size);
