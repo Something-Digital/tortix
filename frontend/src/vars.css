@@ -1,0 +1,19 @@
+:root {
+  /* paddings */
+  --common-padding: 8px;
+  --element-padding: 6px;
+
+  /* margins */
+  --common-horizontal-margin: 10px;
+  --common-vertical-margin: 16px;
+
+  /* colors */
+  --main-title-color: hotpink;
+  --main-text-color: #2c3e50;
+  --main-background-color: lightpink;
+  --gray-background: whitesmoke;
+  --disabled-color: gray;
+
+  /* sizes */
+  --main-icon-size: 24px;
+}
