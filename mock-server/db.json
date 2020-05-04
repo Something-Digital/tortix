@@ -2,74 +2,89 @@
   "cakes": [
     {
       "id" : "cake0",
-      "cake_name": "Тортилья",
+      "title": "Тортилья",
       "price": 1000,
       "vendor_id": "vendor0",
       "vendor_name" : "Тортикс",
       "vendor_city" : "Челябинск",
+      "delivery": ["mail", "taxi"],
       "vendor_rating" : 4.9
     },
     {
       "id" : "cake1",
-      "cake_name": "Пражская весна",
+      "title": "Пражская весна",
+      "type": "biscuit",
       "price": 900,
       "vendor_id": "vendor0",
       "vendor_name" : "Тортикс",
       "vendor_city" : "Челябинск",
+      "delivery": ["mail", "taxi"],
       "vendor_rating" : 4.9
     },
     {
       "id" : "cake2",
-      "cake_name": "Медовик",
+      "title": "Медовик",
+      "type": "biscuit",
       "price": 450,
       "vendor_id": "vendor1",
       "vendor_name" : "Весёлый тортодел",
       "vendor_city" : "Челябинск",
+      "delivery": ["mail", "taxi"],
       "vendor_rating" : 3.5
     },
     {
       "id" : "cake3",
-      "cake_name": "Сметанный",
+      "title": "Сметанный",
+      "type": "biscuit",
       "price": 750,
       "vendor_id": "vendor1",
       "vendor_name" : "Весёлый тортодел",
       "vendor_city" : "Челябинск",
+      "delivery": ["mail", "taxi"],
       "vendor_rating" : 3.5
     },
     {
       "id" : "cake4",
-      "cake_name": "Медовик",
+      "title": "Медовик",
+      "type": "biscuit",
       "price": 300,
       "vendor_id": "vendor2",
       "vendor_name" : "Перспективная быстроразвивающаяся компания",
       "vendor_city" : "Москва",
+      "delivery": ["mail", "taxi"],
       "vendor_rating" : 1.5
     },
     {
       "id" : "cake5",
-      "cake_name": "Сметанный",
+      "title": "Сметанный",
+      "type": "biscuit",
       "price": 3000,
       "vendor_id": "vendor2",
       "vendor_name" : "Перспективная быстроразвивающаяся компания",
       "vendor_city" : "Москва",
+      "delivery": ["mail", "taxi"],
       "vendor_rating" : 1.5
     },
     {
       "id" : "cake6",
-      "cake_name": "Останкинский",
+      "title": "Останкинский",
+      "type": "biscuit",
       "price": 1500,
       "vendor_id": "vendor2",
       "vendor_name" : "Перспективная быстроразвивающаяся компания",
       "vendor_city" : "Москва",
+      "delivery": ["mail", "taxi"],
       "vendor_rating" : 1.5
     },
     {
       "id" : "cake7",
-      "cake_name": "Блинный",
+      "title": "Блинный",
+      "type": "biscuit",
       "price": 444,
       "vendor_id": "vendor2",
       "vendor_name" : "Перспективная быстроразвивающаяся компания",
       "vendor_city" : "Москва",
+      "delivery": ["mail", "taxi"],
       "vendor_rating" : 1.5
     }
   ]
