@@ -1,91 +1,79 @@
 {
-  "cakes": [
+  "vendors": [
     {
-      "id" : "cake0",
-      "title": "Тортилья",
-      "price": 1000,
-      "vendor_id": "vendor0",
+      "id" : "vendor1",
       "vendor_name" : "Тортикс",
       "vendor_city" : "Челябинск",
-      "delivery": ["mail", "taxi"],
-      "vendor_rating" : 4.9
+      "vendor_rating" : 4.99,
+      "types": {
+        "tasty": 1000,
+        "nasty": 100
+      },
+      "delivery": {
+        "pickup": 0,
+        "taxi": 100
+      },
+      "cake_photo_id": "cake1"
     },
     {
-      "id" : "cake1",
-      "title": "Пражская весна",
-      "type": "biscuit",
-      "price": 900,
-      "vendor_id": "vendor0",
-      "vendor_name" : "Тортикс",
+      "id" : "vendor2",
+      "vendor_name" : "Перспективная развивающаяся компания",
+      "vendor_city" : "Москва",
+      "vendor_rating" : 1.99,
+      "types": {
+        "tasty": 100,
+        "nasty": 10
+      },
+      "delivery": {
+        "pickup": 0,
+        "taxi": 100
+      },
+      "cake_photo_id": "cake2"
+    },
+    {
+      "id" : "vendor3",
+      "vendor_name" : "Тортилла",
       "vendor_city" : "Челябинск",
-      "delivery": ["mail", "taxi"],
-      "vendor_rating" : 4.9
+      "vendor_rating" : 4.5,
+      "types": {
+        "tasty": 1500,
+        "nasty": 500
+      },
+      "delivery": {
+        "pickup": 0,
+        "taxi": 200
+      },
+      "cake_photo_id": "cake3"
     },
     {
-      "id" : "cake2",
-      "title": "Медовик",
-      "type": "biscuit",
-      "price": 450,
-      "vendor_id": "vendor1",
-      "vendor_name" : "Весёлый тортодел",
+      "id" : "vendor4",
+      "vendor_name" : "Kentucky fried cakes",
       "vendor_city" : "Челябинск",
-      "delivery": ["mail", "taxi"],
-      "vendor_rating" : 3.5
+      "vendor_rating" : 4.3,
+      "types": {
+        "tasty": 700,
+        "nasty": 400
+      },
+      "delivery": {
+        "pickup": 0,
+        "taxi": 150
+      },
+      "cake_photo_id": "cake4"
     },
     {
-      "id" : "cake3",
-      "title": "Сметанный",
-      "type": "biscuit",
-      "price": 750,
-      "vendor_id": "vendor1",
-      "vendor_name" : "Весёлый тортодел",
+      "id" : "vendor5",
+      "vendor_name" : "Птичка",
       "vendor_city" : "Челябинск",
-      "delivery": ["mail", "taxi"],
-      "vendor_rating" : 3.5
-    },
-    {
-      "id" : "cake4",
-      "title": "Медовик",
-      "type": "biscuit",
-      "price": 300,
-      "vendor_id": "vendor2",
-      "vendor_name" : "Перспективная быстроразвивающаяся компания",
-      "vendor_city" : "Москва",
-      "delivery": ["mail", "taxi"],
-      "vendor_rating" : 1.5
-    },
-    {
-      "id" : "cake5",
-      "title": "Сметанный",
-      "type": "biscuit",
-      "price": 3000,
-      "vendor_id": "vendor2",
-      "vendor_name" : "Перспективная быстроразвивающаяся компания",
-      "vendor_city" : "Москва",
-      "delivery": ["mail", "taxi"],
-      "vendor_rating" : 1.5
-    },
-    {
-      "id" : "cake6",
-      "title": "Останкинский",
-      "type": "biscuit",
-      "price": 1500,
-      "vendor_id": "vendor2",
-      "vendor_name" : "Перспективная быстроразвивающаяся компания",
-      "vendor_city" : "Москва",
-      "delivery": ["mail", "taxi"],
-      "vendor_rating" : 1.5
-    },
-    {
-      "id" : "cake7",
-      "title": "Блинный",
-      "type": "biscuit",
-      "price": 444,
-      "vendor_id": "vendor2",
-      "vendor_name" : "Перспективная быстроразвивающаяся компания",
-      "vendor_city" : "Москва",
-      "delivery": ["mail", "taxi"],
-      "vendor_rating" : 1.5
+      "vendor_rating" : 3.3,
+      "types": {
+        "tasty": 800,
+        "nasty": 600
+      },
+      "delivery": {
+        "pickup": 0,
+        "taxi": 100
+      },
+      "cake_photo_id": "cake5"
     }
   ]
 }
