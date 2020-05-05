@@ -13,6 +13,9 @@
 
 <script>
 import Item from '@/components/Item.vue';
+import { createNamespacedHelpers } from 'vuex';
+
+const { mapActions } = createNamespacedHelpers('vendors');
 
 export default {
   name: 'MainList',
@@ -45,6 +48,12 @@ export default {
       },
     ],
   }),
+  created() {
+    this.initialLoadVendors();
+  },
+  methods: {
+    ...mapActions(['initialLoadVendors']),
+  },
 };
 </script>
 

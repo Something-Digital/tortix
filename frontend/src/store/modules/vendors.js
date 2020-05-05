@@ -1,4 +1,6 @@
 /* eslint-disable camelcase */
+import api from '@/api';
+
 export class Vendor {
   constructor({
     id, vendor_name, vendor_city, vendor_rating, types, delivery, cake_photo_id,
@@ -28,13 +30,12 @@ export const getters = {
 };
 
 export const actions = {
-  async loadVendors({
-    rootGetters, commit,
-  }, { reload }) {
+  async loadVendors({ commit }, { reload }) {
     try {
       commit('setLoading', true);
       if (reload) commit('clearVendors');
-      const response = await rootGetters.api.getVendors();
+      const response = await api.getVendors();
+      console.log('response', response);
       if (response?.data?.length > 0) {
         response.data.forEach((item) => commit('addVendor', item));
       }

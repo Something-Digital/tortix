@@ -5,7 +5,7 @@ export const subscribeHandler = (mutation, state) => {
       localStorage.setItem('rules/categoriesOrder', JSON.stringify(state.rules.categoriesOrder));
       break;
     default:
-      console.log('reload vendors!');
+      console.log('reload vendors in plugin!');
       break;
   }
 };

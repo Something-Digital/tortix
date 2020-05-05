@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Header title="Заказать торт"/>
-    <router-view/>
+    <Header title="Заказать торт" />
+    <router-view />
     <Footer />
   </div>
 </template>
