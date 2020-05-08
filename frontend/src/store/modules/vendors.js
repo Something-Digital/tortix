@@ -1,56 +1,34 @@
-import api from '@/api';
 import Vendor from '../../../../shared/models/Vendor';
+import CommonModule from '../models/CommonModule';
 
-export const initialState = {
-  items: [],
-  isLoading: false,
-};
+const MODULE_NAME = 'vendors';
 
-export const getters = {
-  // activeMessages: state => state.items.filter(message => message.alert),
-};
+const commonModule = CommonModule.create({
+  moduleName: MODULE_NAME,
+  itemClass: Vendor,
+});
 
-export const actions = {
-  async loadVendors({ commit }, { reload }) {
-    try {
-      commit('setLoading', true);
-      if (reload) commit('clearVendors');
-      const response = await api.get_vendors();
-      if (response?.data?.length > 0) {
-        response.data.forEach((item) => commit('addVendor', item));
-      }
-    } catch (e) {
-      // TODO: Add proper handling using dispatch
-    } finally {
-      commit('setLoading', false);
-    }
-  },
-  reloadVendors({ dispatch }) {
-    dispatch('loadVendors', { reload: true });
-  },
-  initialLoadVendors({ dispatch }) {
-    dispatch('loadVendors', { reload: true });
-  },
-};
-
-export const mutations = {
-  addVendor(state, payload) {
-    state.items.push(Vendor.createVendor(payload));
-  },
-
-  clearVendors(state) {
-    state.items = initialState.items;
-  },
-
-  setLoading(state, value) {
-    state.isLoading = value;
-  },
-};
+const state = {};
+const getters = {};
+const actions = {};
+const mutations = {};
 
 export default {
   namespaced: true,
-  state: initialState,
-  getters,
-  actions,
-  mutations,
+  state: {
+    ...commonModule.state,
+    ...state,
+  },
+  getters: {
+    ...commonModule.getters,
+    ...getters,
+  },
+  actions: {
+    ...commonModule.actions,
+    ...actions,
+  },
+  mutations: {
+    ...commonModule.mutations,
+    ...mutations,
+  },
 };

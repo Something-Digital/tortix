@@ -49,10 +49,10 @@ export default {
     ],
   }),
   created() {
-    this.initialLoadVendors();
+    this.initialLoadItems();
   },
   methods: {
-    ...mapActions(['initialLoadVendors']),
+    ...mapActions(['initialLoadItems']),
   },
 };
 </script>

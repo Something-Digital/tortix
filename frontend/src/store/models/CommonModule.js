@@ -17,8 +17,8 @@ export default class CommonModule {
           commit('setLoading', true);
           if (reload) commit('clearItems');
           const response = await api[`get_${moduleName}`]();
-          if (response?.data?.length > 0) {
-            response.data.forEach((item) => commit('addItem', item));
+          if (response?.length > 0) {
+            response.forEach((item) => commit('addItem', item));
           }
         } catch (e) {
           // TODO: Add proper handling using dispatch
@@ -36,6 +36,7 @@ export default class CommonModule {
 
     this.mutations = {
       addItem(state, payload) {
+        console.log('add', itemClass.create);
         state.items.push(itemClass.create(payload));
       },
       clearItems(state) {
