@@ -1,5 +1,5 @@
 import api from '@/api';
-import { Vendor } from '../../../../shared/models/Vendor';
+import Vendor from '../../../../shared/models/Vendor';
 
 export const initialState = {
   items: [],

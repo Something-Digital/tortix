@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable camelcase */
-export class Vendor {
+export default class Vendor {
   constructor({
     id, vendor_name, vendor_city, vendor_rating, types, delivery, cake_photo_id,
   }) {

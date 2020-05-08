@@ -1,8 +1,13 @@
 
-import { InputFilter as Item } from '../../../../shared/models/InputFilter';
-import commonModule from '../mixins/commonModule';
+import InputFilter from '../../../../shared/models/InputFilter';
+import CommonModule from '../models/CommonModule';
 
 const MODULE_NAME = 'filters';
+
+const commonModule = CommonModule.create({
+  moduleName: MODULE_NAME,
+  itemClass: InputFilter,
+});
 
 const state = {};
 const getters = {};

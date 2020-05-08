@@ -1,6 +1,4 @@
-/* eslint-disable import/prefer-default-export */
-/* eslint-disable camelcase */
-export class InputFilter {
+export default class InputFilter {
   constructor({ id }) {
     this.id = id;
   }
