@@ -75,5 +75,36 @@
       },
       "cake_photo_id": "cake5"
     }
+  ],
+  "filters": [
+    {
+      "type": "input",
+      "name": "city",
+      "title": "Город",
+      "options": ["Челябинск", "Москва", "Санкт-Петербург", "Кременкуль"],
+      "value": null
+    },
+    {
+      "type": "input",
+      "name": "type",
+      "title": "Тип торта",
+      "options": ["Вкусный", "Невкусный"],
+      "value": null
+    },
+    {
+      "type": "input",
+      "name": "delivery",
+      "title": "Доставка",
+      "options": ["Самовывоз", "До двери", "Забрать на почте"],
+      "value": null
+    },
+    {
+      "type": "minmax",
+      "name": "price",
+      "title": "Цена за кг",
+      "min": 10,
+      "max": 5000,
+      "value": null
+    }
   ]
 }

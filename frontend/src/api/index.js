@@ -2,18 +2,21 @@ import ky from 'ky';
 
 const API_ENDPOINTS = [
   {
-    name: 'getVendors',
+    name: 'get_vendors',
     method: 'get',
     url: 'vendors',
     options: {},
   },
+  {
+    name: 'get_filters',
+    method: 'get',
+    url: 'filters',
+    options: {},
+  },
 ];
 
-console.log(process?.env?.API_URL);
-
-
 const options = {
-  prefixUrl: process?.env?.API_URL ? `${process.env.API_URL}/api` : 'http://localhost:3000/api',
+  prefixUrl: 'http://localhost:3000/api',
 };
 
 const api = ky.create(options);

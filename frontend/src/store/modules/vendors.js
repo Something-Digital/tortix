@@ -1,24 +1,5 @@
-/* eslint-disable camelcase */
 import api from '@/api';
-
-export class Vendor {
-  constructor({
-    id, vendor_name, vendor_city, vendor_rating, types, delivery, cake_photo_id,
-  }) {
-    this.id = id;
-    this.vendorName = vendor_name;
-    this.vendorCity = vendor_city;
-    this.vendorRating = vendor_rating;
-    this.types = types;
-    this.delivery = delivery;
-    this.cakePhotoId = cake_photo_id;
-  }
-
-  static createVendor(rawData) {
-    // TODO: Add checks and exceptions
-    return new this(rawData);
-  }
-}
+import { Vendor } from '../../../../shared/models/Vendor';
 
 export const initialState = {
   items: [],
@@ -34,8 +15,7 @@ export const actions = {
     try {
       commit('setLoading', true);
       if (reload) commit('clearVendors');
-      const response = await api.getVendors();
-      console.log('response', response);
+      const response = await api.get_vendors();
       if (response?.data?.length > 0) {
         response.data.forEach((item) => commit('addVendor', item));
       }

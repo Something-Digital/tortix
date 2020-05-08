@@ -24,11 +24,18 @@
 import InputFilter from '@/components/InputFilter.vue';
 import MinMaxFilter from '@/components/MinMaxFilter.vue';
 
+import { createNamespacedHelpers } from 'vuex';
+
+const { mapState } = createNamespacedHelpers('packages');
+
 export default {
   name: 'Filters',
   components: {
     InputFilter,
     MinMaxFilter,
+  },
+  computed: {
+    ...mapState(['city', 'type', 'delivery', 'minPrice', 'maxPrice']),
   },
 };
 </script>
