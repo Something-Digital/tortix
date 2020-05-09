@@ -5,7 +5,7 @@ const MODULE_NAME = 'vendors';
 
 const commonModule = CommonModule.create({
   moduleName: MODULE_NAME,
-  itemClass: Vendor,
+  ItemClass: Vendor,
 });
 
 const state = {};

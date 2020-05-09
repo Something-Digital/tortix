@@ -12,9 +12,4 @@ export default class Vendor {
     this.delivery = delivery;
     this.cakePhotoId = cake_photo_id;
   }
-
-  static createVendor(rawData) {
-    // TODO: Add checks and exceptions
-    return new this(rawData);
-  }
 }

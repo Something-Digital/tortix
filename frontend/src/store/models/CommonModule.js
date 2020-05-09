@@ -6,7 +6,7 @@ const getInitialState = () => ({
 });
 
 export default class CommonModule {
-  constructor({ moduleName, itemClass }) {
+  constructor({ moduleName, ItemClass }) {
     this.state = getInitialState();
 
     this.getters = {};
@@ -36,8 +36,7 @@ export default class CommonModule {
 
     this.mutations = {
       addItem(state, payload) {
-        console.log('add', itemClass.create);
-        state.items.push(itemClass.create(payload));
+        state.items.push(new ItemClass(payload));
       },
       clearItems(state) {
         state.items = getInitialState().items;
