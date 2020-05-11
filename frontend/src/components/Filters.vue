@@ -26,7 +26,7 @@ import MinMaxFilter from '@/components/MinMaxFilter.vue';
 
 import { createNamespacedHelpers } from 'vuex';
 
-const { mapState } = createNamespacedHelpers('packages');
+const { mapActions } = createNamespacedHelpers('filters');
 
 export default {
   name: 'Filters',
@@ -35,7 +35,13 @@ export default {
     MinMaxFilter,
   },
   computed: {
-    ...mapState(['city', 'type', 'delivery', 'minPrice', 'maxPrice']),
+    // ...mapState(['city', 'type', 'delivery', 'minPrice', 'maxPrice']),
+  },
+  created() {
+    this.initialLoadItems();
+  },
+  methods: {
+    ...mapActions(['initialLoadItems']),
   },
 };
 </script>
